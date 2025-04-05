@@ -2,15 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>color Pickker</title>
+    <title>Aadhaar Number Masking</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="color" id="colorpickker">
-    <h1>Hexa Code</h1>
-    <input type="text" id="box">
-
+    <div class="container">
+        <h1>Mask Aadhaar Number</h1>
+        
+        <div class="input-group">
+            <input type="text" id="aadhaar-input" maxlength="12" placeholder="Enter 12-digit Aadhaar">
+            <button id="mask-btn">submit</button>
+        </div>
+        
+        <div class="result">
+            <p>Masked Aadhaar:</p>
+            <div id="masked-output" class="aadhaar-mask"></div>
+        </div>
+    </div>
+     <script src="style.css"></script>
     <script src="script.js"></script>
 </body>
 </html>
